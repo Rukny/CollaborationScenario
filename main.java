@@ -1,4 +1,6 @@
-public class Calculator {
+import java.util.Scanner;
+
+class Calculator {
     public static int add(int a, int b) {
         return a + b;
     }
@@ -17,10 +19,18 @@ public class Calculator {
         }
         return (double) a / b;
     }
+    public static int power(int a, int b) {
+        int result = 1;
+        for(int i = 0; i<b; i++) {
+            result*=a;
+        }
+        return result;
+    }
 
     public static void main(String[] args) {
-        int num1 = 10;
-        int num2 = 5;
+        Scanner sc = new Scanner(System.in);
+        int num1 = sc.nextInt();
+        int num2 = sc.nextInt();
 
         int sum = add(num1, num2);
         System.out.println("Sum: " + sum);
@@ -33,5 +43,8 @@ public class Calculator {
 
         double quotient = divide(num1, num2);
         System.out.println("Quotient: " + quotient);
+
+        int power = power(num1, num2);
+        System.out.println("Power: " + power);
     }
 }
