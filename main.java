@@ -26,7 +26,9 @@ class Calculator {
         }
         return result;
     }
-
+    public static int modulo(int a, int b) {
+        return a % b;
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.printLn("Enter your numbers that you want to calculate here: ");
@@ -44,6 +46,9 @@ class Calculator {
 
         double quotient = divide(num1, num2);
         System.out.println("Quotient: " + quotient);
+        
+        double modulo = modulo(num1, num2);
+        System.out.println("Modulo: " + modulo);
 
         int power = power(num1, num2);
         System.out.println("Power: " + power);
