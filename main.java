@@ -36,13 +36,13 @@ class Calculator {
         int num2 = sc.nextInt();
 
         int sum = add(num1, num2);
-        System.out.println("Sum: " + sum);
+        System.out.println("sum: " + sum);
 
         int difference = subtract(num1, num2);
-        System.out.println("Difference: " + difference);
+        System.out.println("difference: " + difference);
 
         int product = multiply(num1, num2);
-        System.out.println("Product: " + product);
+        System.out.println("product: " + product);
 
         double quotient = divide(num1, num2);
         System.out.println("Quotient: " + quotient);
